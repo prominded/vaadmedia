@@ -20,17 +20,19 @@
     font-family: $font-family-pro;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
-::-webkit-scrollbar {
+/*::-webkit-scrollbar {
     width: 3px;
     height: 5px;
-}
+}*/
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #D8D8D8;
+    background: #d8d8d8;
 }
 
 /* Handle */
@@ -46,7 +48,7 @@
     font-family: $font-family-pro;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
     width: 24px;
     height: 15px;
     margin-right: 10px;
@@ -58,7 +60,11 @@ input[type=checkbox] {
     }
 }
 
-button, input, optgroup, select, textarea {
+button,
+input,
+optgroup,
+select,
+textarea {
     font-family: $font-family-pro;
     color: $font-color;
 }
@@ -104,7 +110,8 @@ body {
     padding: 6px 5px;
 }
 
-.btn-link:hover, .btn-link:focus {
+.btn-link:hover,
+.btn-link:focus {
     color: $font-color;
     text-decoration: none;
 }
@@ -199,7 +206,6 @@ body {
             text-align: right;
             padding-top: 5px;
 
-
             * {
                 display: table-cell;
                 vertical-align: middle;
@@ -217,7 +223,7 @@ body {
             position: absolute !important;
 
             .theme-btn {
-                padding: .5rem .9rem;
+                padding: 0.5rem 0.9rem;
             }
 
             .modal-footer {
@@ -288,7 +294,7 @@ body {
     border-top: 3px solid $border-primary;
     border-radius: 0px;
     background: $white-color;
-    @include box-shadow(11px 10px 17px 0 rgba(0,0,0,0.21));
+    @include box-shadow(11px 10px 17px 0 rgba(0, 0, 0, 0.21));
 
     li {
         a {
@@ -430,7 +436,7 @@ header {
                 border-radius: 2px 0px 0px 2px;
                 border: 1px solid $theme-color;
                 border-right: 0;
-                font-family:"Source Sans Pro", sans-serif;
+                font-family: "Source Sans Pro", sans-serif;
 
                 -webkit-appearance: none;
                 -moz-appearance: none;
@@ -672,13 +678,13 @@ header {
     margin: 0;
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.24);
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.24);
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 
     .navbar {
         margin: 0px;
         font-family: SourceSansPro-Semibold;
         font-size: 16px;
-        color: rgba(0,0,0,0.83);
+        color: rgba(0, 0, 0, 0.83);
         letter-spacing: 0;
         cursor: pointer;
         min-height: 40px;
@@ -695,7 +701,7 @@ header {
                 display: inline-block;
                 padding: 5px 5px 5px 35px;
 
-                .material-icons{
+                .material-icons {
                     position: absolute;
                     left: 0;
                     top: 2px;
@@ -707,7 +713,7 @@ header {
         .category-dropdown {
             position: absolute;
             top: 40px;
-            background: #FFF;
+            background: #fff;
             left: 0;
             width: 100%;
             height: 525px;
@@ -715,7 +721,7 @@ header {
             li.category-list {
                 width: 100%;
                 display: inline-block;
-                background: #FFF;
+                background: #fff;
                 position: relative;
 
                 a {
@@ -723,7 +729,7 @@ header {
                     position: relative;
                     font-weight: 600;
                     font-size: 14px;
-                    color: rgba(0,0,0,0.83);
+                    color: rgba(0, 0, 0, 0.83);
                     letter-spacing: 0;
                     font-weight: 600;
                     display: block;
@@ -735,7 +741,7 @@ header {
                     }
 
                     &:hover {
-                        color: #28557B;
+                        color: #28557b;
                         text-decoration: none;
                         background-color: $light-background;
                     }
@@ -744,7 +750,7 @@ header {
                 .child-container {
                     position: absolute;
                     top: 0;
-                    background-color: #CCC;
+                    background-color: #ccc;
                     left: 283px;
                     width: 250px;
                     height: 350px;
@@ -754,7 +760,7 @@ header {
     }
 
     .secondary-navbar {
-        background-color: #4D7EA8;
+        background-color: #4d7ea8;
         min-height: 40px;
         padding: 5px;
         vertical-align: middle;
@@ -871,12 +877,22 @@ header {
     border: 1px solid red;
 }
 
-.popular-products .second-row .popular-products-listing .product-buttons .add-to-cart-button .btn-primary {
+.popular-products
+    .second-row
+    .popular-products-listing
+    .product-buttons
+    .add-to-cart-button
+    .btn-primary {
     border: #26a37c !important;
     border-radius: 0px;
 }
 
-.popular-products .second-row .popular-products-listing .product-buttons .add-to-cart-button .addtocart {
+.popular-products
+    .second-row
+    .popular-products-listing
+    .product-buttons
+    .add-to-cart-button
+    .addtocart {
     text-transform: uppercase;
     background-color: #26a37c;
 }
@@ -910,7 +926,7 @@ i.within-circle {
 
 .center_div {
     margin: 0 auto;
-    width: 80%/* value of your choice which suits your alignment */
+    width: 80%; /* value of your choice which suits your alignment */
 }
 
 .form-style {
@@ -942,21 +958,23 @@ i.within-circle {
 }
 
 .w3-card-2 {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
     float: right;
     height: 36px;
     width: 133px;
 }
 
 .w3-card-login {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
     float: right;
     height: 36px;
     width: 71px;
 }
 
 .btn-new-customer-login {
-    color: #26A37C !important;
+    color: #26a37c !important;
     font-size: 16px;
     padding: 11px;
     text-decoration: none !important;
@@ -964,8 +982,8 @@ i.within-circle {
 
 .btn-dark-green {
     color: #fff;
-    background-color: #26A37C;
-    border-color: #26A37C;
+    background-color: #26a37c;
+    border-color: #26a37c;
     height: 36px;
     border-radius: 0px !important;
 }
@@ -973,8 +991,11 @@ i.within-circle {
 .login-text {
     height: 65px;
     width: 575px;
-    border: 1px #E5E5E5;
+    border: 1px #e5e5e5;
     margin: 0 auto;
 }
 
-.row:before, .row:after {display: none !important;}
+.row:before,
+.row:after {
+    display: none !important;
+}
