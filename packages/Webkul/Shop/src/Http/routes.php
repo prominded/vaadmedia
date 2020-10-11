@@ -6,6 +6,36 @@ Route::group(['middleware' => ['web', 'locale', 'theme', 'currency']], function 
         'view' => 'shop::home.index'
     ])->name('shop.home.index');
 
+
+    Route::get('/outdoor', function () {
+    return view('shop::home.outdoor.index');
+})->name('outdoor');
+
+  Route::get('/graphics', function () {
+    return view('shop::home.graphics.index');
+})->name('graphics');
+
+  Route::get('/print', function () {
+    return view('shop::home.print.index');
+})->name('print');
+
+  Route::get('/digital', function () {
+    return view('shop::home.digital.index');
+})->name('digital');
+
+  Route::get('/planning', function () {
+    return view('shop::home.planning.index');
+})->name('planning');
+
+  Route::get('/packages', function () {
+    return view('shop::home.packages.index');
+})->name('packages');
+
+  Route::get('/how-it-works', function () {
+    return view('shop::home.how-it-works.index');
+})->name('how-it-works');
+
+
     //subscription
     //subscribe
     Route::get('/subscribe', 'Webkul\Shop\Http\Controllers\SubscriptionController@subscribe')->name('shop.subscribe');

@@ -396,7 +396,7 @@ return [
         'buy-now' => 'Buy Now',
         'whoops' => 'Whoops!',
         'quantity' => 'Quantity',
-        'in-stock' => 'In Stock',
+        'in-stock' => 'Available',
         'out-of-stock' => 'Out Of Stock',
         'view-all' => 'View All',
         'select-above-options' => 'Please select above options first.',

@@ -2,11 +2,15 @@
     <div class="navbar-top-left">
         <div class="brand-logo">
             <a href="{{ route('admin.dashboard.index') }}">
+
+              <img class="logo" src="{{ asset('themes/velocity/assets/images/vaad-logo.png') }}" />
+        <!--
                 @if (core()->getConfigData('general.design.admin_logo.logo_image'))
                     <img src="{{ \Illuminate\Support\Facades\Storage::url(core()->getConfigData('general.design.admin_logo.logo_image')) }}" alt="{{ config('app.name') }}" style="height: 40px; width: 110px;"/>
                 @else
                     <img src="{{ asset('vendor/webkul/ui/assets/images/logo.png') }}" alt="{{ config('app.name') }}"/>
                 @endif
+                -->
             </a>
         </div>
     </div>

@@ -62,7 +62,8 @@ class ShopController extends Controller
             case 'new-products':
             case 'featured-products':
             case 'outdoor-section-products':  
-            case 'graphics-section-products':    
+            case 'graphics-section-products': 
+            case 'billboards-market-products':       
                 $formattedProducts = [];
                 $count = request()->get('count');
 
@@ -77,6 +78,10 @@ class ShopController extends Controller
                  else if ($slug == "outdoor-section-products") {
                     $products = $this->velocityProductRepository->getOutdoorSectionProducts($count);
                 }
+                  else if ($slug == "billboards-market-products") {
+                    $products = $this->velocityProductRepository->getBillboardsMarketProducts($count);
+                }
+
 
                 foreach ($products as $product) {
                     array_push($formattedProducts, $this->velocityHelper->formatProduct($product));
